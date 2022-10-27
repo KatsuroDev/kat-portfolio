@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
-import './style.css'
+// import './style.css'
+import './colorpalette.css'
 import App from './App.vue'
 
 import 'bootstrap'
