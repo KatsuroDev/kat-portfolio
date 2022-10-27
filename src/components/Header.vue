@@ -48,6 +48,8 @@ li {
 .row {
     height: 100px;
     background-color: var(--jet);
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 </style>
