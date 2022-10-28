@@ -1,12 +1,9 @@
 <script setup>
-  import Header from './components/Header.vue'
-  import Palette from './components/Palette.vue'
+  import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <Header />
-  <Palette />
-
+  <RouterView />
 </template>
 
 <style scoped>
