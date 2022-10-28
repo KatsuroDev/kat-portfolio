@@ -1,12 +1,10 @@
 import { createApp } from 'vue'
-// import './style.css'
-import './colorpalette.css'
-import './style.css'
-import App from './App.vue'
 
+import './assets/css/colorpalette.css'
+import './assets/css/main.css'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-// import './assets/scss/main.scss'
+import App from './App.vue'
 
 createApp(App).mount('#app')
