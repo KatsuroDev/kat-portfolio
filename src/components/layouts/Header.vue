@@ -8,9 +8,12 @@
         </div>
         <div class="col-auto">
             <ul>
-                <li>Albums</li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">About</a></li>
+                <!--<li>Albums</li>
                 <li>Files</li>
-                <li>About</li>
+                <li>About</li>-->
             </ul>
         </div>
     </div>
@@ -25,10 +28,16 @@
 
 h1 {
     display: block;
+    font-family: 'Oxygen';
+    font-size: 3.8em;
+    font-weight: lighter;
+    margin-left: 10px;
 }
 
 div {
     color: var(--platinum);
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -41,8 +50,31 @@ ul {
 }
 
 li {
-    padding: 5px;
-    display: inline;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+}
+
+
+
+a {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--platinum)!important;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: 'Nanum Gothic';
+    transition: background-color 200ms ease-in-out;
+}
+
+li :hover {
+    background-color: rgba(0, 0, 0, 0.2)!important;
 }
 
 .row {
