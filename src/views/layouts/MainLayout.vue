@@ -1,13 +1,5 @@
 <script setup>
     import Header from '../../components/layouts/Header.vue'
-    
-    const props = defineProps({
-        title: {
-            type: String,
-            required: true
-        }
-    })
-
 </script>
 
 <template>
