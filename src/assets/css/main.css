@@ -1,4 +1,10 @@
 :root {
-    background-color: var(--black-olive);
     overflow-x: hidden;
+    background-color: var(--black-olive);
+}
+
+main {
+    background-color: var(--black-olive);
+    color: var(--platinum);
+    font-family: 'Nanum Gothic';
 }

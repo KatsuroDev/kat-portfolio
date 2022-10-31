@@ -10,7 +10,7 @@
             <ul>
                 <li><a href="#">Albums</a></li>
                 <li><a href="#">Files</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/about">About</a></li>
                 <!--<li>Albums</li>
                 <li>Files</li>
                 <li>About</li>-->
@@ -21,6 +21,11 @@
 
 <style scoped>
 
+
+div {
+    -webkit-user-select: none;
+    user-select: none;
+}
 .title {
     display: flex;
     align-items: center;
