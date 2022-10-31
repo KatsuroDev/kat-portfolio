@@ -4,16 +4,13 @@
 <template>
     <div class="row d-flex align-items-stretch">
         <div class="col title">
-            <h1>Kat's Portfolio</h1>
+            <a class="title-link" href="/">Kat's Portfolio</a>
         </div>
         <div class="col-auto">
             <ul>
-                <li><a href="#">Albums</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="/about">About</a></li>
-                <!--<li>Albums</li>
-                <li>Files</li>
-                <li>About</li>-->
+                <li class="nav-item"><a class="nav-link" href="#">Albums</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Files</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
             </ul>
         </div>
     </div>
@@ -22,27 +19,25 @@
 <style scoped>
 
 
-div {
-    -webkit-user-select: none;
-    user-select: none;
-}
 .title {
     display: flex;
     align-items: center;
 }
 
-h1 {
+.title-link {
     display: block;
     font-family: 'Oxygen';
     font-size: 3.8em;
     font-weight: lighter;
     margin-left: 10px;
+    cursor: default;
 }
 
 div {
-    color: var(--platinum);
     padding: 0;
     margin: 0;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 ul {
@@ -61,9 +56,7 @@ li {
     height: 100%;
 }
 
-
-
-a {
+.nav-link {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0px;
@@ -71,14 +64,17 @@ a {
     height: 100%;
     display: flex;
     align-items: center;
-    color: var(--platinum)!important;
-    text-decoration: none;
     font-size: 1.8em;
     font-family: 'Nanum Gothic';
     transition: background-color 200ms ease-in-out;
 }
 
-li :hover {
+a {
+    color: var(--platinum)!important;
+    text-decoration: none;
+}
+
+.nav-item :hover {
     background-color: rgba(0, 0, 0, 0.2)!important;
 }
 
