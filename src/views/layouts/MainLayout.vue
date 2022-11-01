@@ -10,12 +10,5 @@
 </template>
 
 <style scoped>
-main {
-    z-index: 1;
-}
-
-Header {
-    z-index: 2;
-}
 
 </style>
