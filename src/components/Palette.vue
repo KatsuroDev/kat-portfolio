@@ -18,12 +18,11 @@
 .colorBlock {
     height: 200px;
     transition: transform 150ms ease-in-out;
-    z-index: 0;
 }
 
 .colorBlock:hover {
     transform: scale(1.2, 1.2);
-    z-index: 1;
+    z-index: 10;
 }
 
 
