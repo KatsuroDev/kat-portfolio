@@ -6,8 +6,8 @@
 
 <template>
  <MainLayout>
-    <Carousel />
-    <Palette />
+     <Carousel />
+     <Palette />
  </MainLayout>
 </template>
 
