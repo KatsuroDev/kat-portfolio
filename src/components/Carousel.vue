@@ -71,8 +71,18 @@ onMounted(() => {
 
 <style scoped>
 
+#carouselExampleInterval, .carousel-inner, #carousel-container, .carousel-item {
+    border-radius: 10px 10px 10px 10px;
+}
+
 #carouselExampleInterval {
-  box-shadow: 0px 0px 10px 0px black;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+#carousel-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .carousel-indicators {
@@ -85,6 +95,8 @@ onMounted(() => {
     border-radius: 5px 5px 5px 5px;
     margin: 30px 0px 30px 0px;
 }
+
+
 
 p {
     margin:0;
