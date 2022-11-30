@@ -5,15 +5,22 @@
     import Uploader from '../../components/Uploader.vue'
 
     const files = ref([])
+    function getURL(file) {
+        return URL.createObjectURL(file)
+    }
 
 </script>
 
 <template>
  <MainLayout>
     <p>My File Selector: <Uploader v-model="files" @input="(newFiles) => files = newFiles"></Uploader></p>
-    <p v-for="file in files" :key="file.id">
-        {{file.name}}
-    </p>
+    <div class="row">
+        <div v-for="file in files" :key="file.id" class="col-2">
+            <img class="img-fluid" :src="getURL(file)" />
+            <p>{{file.name}}</p>
+        </div>
+    </div>
+
  </MainLayout>
 </template>
 
