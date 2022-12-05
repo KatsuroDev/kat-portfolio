@@ -19,7 +19,7 @@
             <span v-if="value">Selected File: {{ value.name }}</span>
             <span v-else> Select File </span>
         </div>
-        <input @change="handleFileChange" type="file" multiple="true" required="true" accept="image/*" />
+        <input @change="handleFileChange" type="file" multiple="true" required="true" accept=".png, .jpeg, .jpg" />
     </label>
 </template>
 
