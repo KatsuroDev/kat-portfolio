@@ -13,7 +13,7 @@
 
 <template>
  <MainLayout>
-    <p>My File Selector: <Uploader v-model="files" @input="(newFiles) => files = newFiles"></Uploader></p>
+    <Uploader @input="(newFiles) => files = newFiles"/>
     <div class="row">
         <div v-for="file in files" :key="file.id" class="col-2">
             <img class="img-fluid" :src="getURL(file)" />
@@ -25,4 +25,7 @@
 </template>
 
 <style scoped>
+.row {
+    margin: 0;
+}
 </style>

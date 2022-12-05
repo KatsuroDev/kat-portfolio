@@ -1,43 +1,77 @@
 <script setup>
+import { ref } from 'vue'
 
-    const props = defineProps({
-    value: String
-    })
-    const emit = defineEmits(['input'])
+const emit = defineEmits(['input'])
+const filesSelected = ref(false)
 
-    function handleFileChange(e) {
-      // Whenever the file changes, emit the 'input' event with the file data.
-      emit('input', e.target.files)
-    }
+function handleFileChange(e) {
+    // Whenever the file changes, emit the 'input' event with the file data.
+    emit('input', e.target.files)
+    filesSelected.value = e.target.files.length != 0
+}
 </script>
 
 
 <template>
-    <!-- <input type="file" multiple="true" required="true" accept="image/*"/> -->
-    <label class="file-select">
-        <div class="btn select-button">
-            <span v-if="value">Selected File: {{ value.name }}</span>
-            <span v-else> Select File </span>
-        </div>
-        <input @change="handleFileChange" type="file" multiple="true" required="true" accept=".png, .jpeg, .jpg" />
-    </label>
+    <form>
+        <label class="file-select">
+            <div class="btn select-button">
+                Select Files
+            </div>
+            <input @change="handleFileChange" type="file" multiple="true" required="true" accept=".png, .jpeg, .jpg" />
+        </label>
+        <label class="file-submit">
+            <div class="btn submit-button" :class="{ disabled: !filesSelected }">
+                Upload
+            </div>
+            <input type="submit" :disabled="filesSelected" />
+        </label>
+    </form>
 </template>
 
 <style scoped>
-.file-select > .select-button {
-  padding: 1rem;
+.btn {
+    margin: 10px;
+    outline: none !important;
+    border: none;
+}
 
-  color: var(--platinum);
-  background-color: var(--iris);
+.btn:hover {
+    outline: none !important;
+    border: none;
+    filter: brightness(1.1)
+}
 
-  border-radius: .3rem;
+.file-select>.select-button {
+    padding: 1rem;
 
-  text-align: center;
-  font-weight: bold;
+    color: var(--platinum);
+    background-color: var(--iris);
+
+    border-radius: .3rem;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.file-submit>.submit-button {
+    padding: 1rem;
+
+    color: var(--platinum);
+    background-color: var(--forest-green-crayola);
+
+    border-radius: .3rem;
+
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Don't forget to hide the original file input! */
-.file-select > input[type="file"] {
-  display: none;
+.file-select>input[type="file"] {
+    display: none;
+}
+
+.file-submit>input[type="submit"] {
+    display: none;
 }
 </style>
