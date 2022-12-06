@@ -66,7 +66,7 @@ li {
     align-items: center;
     font-size: 1.8em;
     font-family: 'Nanum Gothic';
-    transition: background-color 200ms ease-in-out;
+    transition: background-color 125ms ease-in-out;
 }
 
 a {

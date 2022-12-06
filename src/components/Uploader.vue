@@ -34,6 +34,7 @@ function handleFileChange(e) {
     margin: 10px;
     outline: none !important;
     border: none;
+	transition: filter 125ms ease-in-out;
 }
 
 .btn:hover {
