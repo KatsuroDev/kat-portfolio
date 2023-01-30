@@ -79,10 +79,14 @@ a {
 }
 
 .row {
+    position: sticky;
+    top:0;
     height: 100px;
+    width: 100%;
     background-color: var(--jet);
     margin-right: 0px;
     margin-left: 0px;
+    z-index: 20;
 }
 
 </style>
