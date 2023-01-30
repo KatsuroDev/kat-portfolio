@@ -9,7 +9,7 @@
         <div class="col-auto">
             <ul>
                 <li class="nav-item"><a class="nav-link" href="#">Albums</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Files</a></li>
+                <li class="nav-item"><a class="nav-link" href="/admin/upload">Files</a></li>
                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
             </ul>
         </div>
@@ -66,7 +66,7 @@ li {
     align-items: center;
     font-size: 1.8em;
     font-family: 'Nanum Gothic';
-    transition: background-color 200ms ease-in-out;
+    transition: background-color 125ms ease-in-out;
 }
 
 a {
