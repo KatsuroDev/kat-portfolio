@@ -1,13 +1,13 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const emit = defineEmits(['input'])
-const filesSelected = ref(false)
+const emit = defineEmits(['input']);
+const filesSelected = ref(false);
 
 function handleFileChange(e) {
     // Whenever the file changes, emit the 'input' event with the file data.
-    emit('input', e.target.files)
-    filesSelected.value = e.target.files.length != 0
+    emit('input', e.target.files);
+    filesSelected.value = e.target.files.length != 0;
 }
 </script>
 

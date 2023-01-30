@@ -1,7 +1,7 @@
 <script setup>
-    import Palette from '../../components/Palette.vue'
+    import Palette from '../../components/Palette.vue';
     import Carousel from '../../components/Carousel.vue';
-    import MainLayout from '../layouts/MainLayout.vue'
+    import MainLayout from '../layouts/MainLayout.vue';
 </script>
 
 <template>

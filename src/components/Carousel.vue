@@ -4,18 +4,18 @@ import { onMounted } from 'vue';
 import * as bootstrap from 'bootstrap';
 
 onMounted(() => {
-    const myCarousel = document.getElementById('carouselExampleInterval')
-    const carouselContainer = document.getElementById('carousel-container')
+    const myCarousel = document.getElementById('carouselExampleInterval');
+    const carouselContainer = document.getElementById('carousel-container');
 
-    const testBlur = document.getElementById('test-blur')
+    const testBlur = document.getElementById('test-blur');
 
-    const firstActiveItem = document.querySelector('.carousel-item.active')
-    testBlur.style.backgroundImage = "url(" + firstActiveItem.querySelector('img').src + ")"
+    const firstActiveItem = document.querySelector('.carousel-item.active');
+    testBlur.style.backgroundImage = "url(" + firstActiveItem.querySelector('img').src + ")";
 
 
     myCarousel.addEventListener('slide.bs.carousel', event => {
-        const activeItem = event.relatedTarget
-        testBlur.style.backgroundImage = "url(" + activeItem.querySelector('img').src + ")"
+        const activeItem = event.relatedTarget;
+        testBlur.style.backgroundImage = "url(" + activeItem.querySelector('img').src + ")";
     })
 })
 

@@ -1,12 +1,12 @@
 <script setup>
-    import { ref, watch } from 'vue'
+    import { ref, watch } from 'vue';
 
-    import MainLayout from '../layouts/MainLayout.vue'
-    import Uploader from '../../components/Uploader.vue'
+    import MainLayout from '../layouts/MainLayout.vue';
+    import Uploader from '../../components/Uploader.vue';
 
-    const files = ref([])
+    const files = ref([]);
     function getURL(file) {
-        return URL.createObjectURL(file)
+        return URL.createObjectURL(file);
     }
 
 </script>
