@@ -1,11 +1,9 @@
 <script setup>
 
 import { onMounted } from 'vue';
-import * as bootstrap from 'bootstrap';
 
 onMounted(() => {
     const myCarousel = document.getElementById('carouselExampleInterval');
-    const carouselContainer = document.getElementById('carousel-container');
 
     const testBlur = document.getElementById('test-blur');
 

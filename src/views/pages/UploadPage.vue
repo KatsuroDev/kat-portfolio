@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, watch } from 'vue';
+    import { ref } from 'vue';
 
     import MainLayout from '../layouts/MainLayout.vue';
     import Uploader from '../../components/Uploader.vue';
